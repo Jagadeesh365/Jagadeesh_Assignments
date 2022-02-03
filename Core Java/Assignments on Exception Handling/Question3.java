@@ -1,3 +1,18 @@
+/*
+3) Write an application to perform withdraw functionality on a SavingAccount object. Point to
+note:
+a. Raise InsufficientBalanceException if you are trying to withdraw more than balance
+or when you balance is zero. E.g. if you balance is 2000 and if you are trying to
+withdraw 2100 or if you balance is 0 and you are trying to withdraw positive value.
+b. Raise IllegalBankTransactionException if you are trying to withdraw a negative value
+from your balance. E.g. if you try to withdraw a negative value savingAcc.withdraw(-
+1000);
+Note: SavingAccount
+ |-- long id
+ |-- double balance
+ |--double withdraw(double amount)
+ |--double deposit(double amount)
+ */
 import java.util.*;
 class InsufficientBalanceException extends RuntimeException{
 	public InsufficientBalanceException(String s) {
@@ -54,7 +69,7 @@ public class Question3 {
 			long id=sc.nextLong();
 			System.out.print("kindly Enter Deposit Amount:");
 			double deposit=sc.nextDouble();
-			SA.SavingDeposit(deposit,id);
+			System.out.println("Total balance is: "+SA.SavingDeposit(deposit,id));
 			break;
 		}
 		case 2:
@@ -63,7 +78,7 @@ public class Question3 {
 			long id=sc.nextLong();
 			System.out.print("kindly Enter Withdraw Amount:");
 			double withdraw=sc.nextDouble();
-			SA.SavingWithdraw(withdraw, id);
+			System.out.println("Total balance is: "+SA.SavingWithdraw(withdraw, id));
 			break;
 		}
 		case 3:
