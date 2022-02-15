@@ -1,7 +1,18 @@
+/*
+ * 3)	Store at least 10 Employee Objects in an TreeSet<Employee>. When the application runs the user should be asked to select one of the options upon which you will print the employee details in a sorted manner.
+For E.g.
+Run Application:
+a)	ID
+b)	Name
+c)	Department
+d)	Salary
+Your choice: b
+<Should print all the employee�s details sorted by name>
+
+ */
 import java.util.Scanner;
 import java.util.TreeSet;
 import java.util.Collections;
-import java.util.Comparator;
 
 class Employee implements Comparable<Employee>
 {
@@ -16,19 +27,18 @@ class Employee implements Comparable<Employee>
 		this.Department=Department;
 		this.Salary=Salary;
 	}
-	public String getName() {
-		return Name;
-	}
-	class EName implements Comparator<Employee>{
-		public int compare(Employee e1, Employee e2) {
-			return e1.getName().compareTo(e2.getName());
-		}
-	}
-	@Override
-	public int compareTo(Employee o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	public int compareTo(Employee e)
+    {
+        if (ID >e.ID) {
+            return 1;
+        }
+        else if (ID < e.ID) {
+            return -1;
+        }
+        else {
+            return 0;
+        }
+    }
 
 }
 public class CollectionsQ3 {
