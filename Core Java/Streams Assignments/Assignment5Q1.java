@@ -104,11 +104,7 @@ public class Assignment5Q1 {
 	}
 
 	public static void main(String[] args) {
-		/*
-		 * List<Fruit> fruits = Arrays.asList( new Fruit("mango",70,50,"Yellow"), new
-		 * Fruit("Apple",80,80,"Red"), new Fruit("Banana",110,40,"Yellow"), new
-		 * Fruit("Pear",100,30,"Yellow"), new Fruit("Grapes",60,50,"Green") );
-		 */
+
 		ArrayList<Fruit> fruits = new ArrayList<>();
 		fruits.add(new Fruit("mango", 70, 50, "Yellow"));
 		fruits.add(new Fruit("Apple", 80, 80, "Red"));
