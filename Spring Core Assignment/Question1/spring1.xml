@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+           xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:context = "http://www.springframework.org/schema/context"
+           xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+                                       <!--      Using setter injection -->
+      <bean id="customer" class="in.SpringAssignment.Question.Q1.Customer">
+          <property name="customerId" value="11719575"/>
+          <property name="customerName" value="jagadeesh"/>
+          <property name="customerContact" value="8978464332"/>
+          <property name="customerAddress" ref="customerAddressinfo"/>
+
+      </bean>
+      <bean id="customerAddressinfo" class="in.SpringAssignment.Question.Q1.Address">
+          <property name="street" value="OldTown"/>
+          <property name="city" value="Vaikuntapuram venakalaa"/>
+          <property name="state" value="Andhra Pradesh"/>
+          <property  name="country" value="India"/>
+          <property name="zip" value="5204203" />
+      </bean>
+
+
+
+                                <!-- Using constructor injection -->
+    <bean id="customerCon" class = "in.SpringAssignment.Question.Q1.Customer">
+        <constructor-arg  type ="int" value="11719575"/>
+        <constructor-arg value="Mavitha"/>
+        <constructor-arg value="99333775511"/>
+        <constructor-arg ref="custAddressConinfo"/>
+    </bean>
+    <bean id="custAddressConinfo" class="in.SpringAssignment.Question.Q1.Address">
+        <constructor-arg value="Vaikuntapuramlo"/>
+        <constructor-arg value="Nellore"/>
+        <constructor-arg value="Andhar Pradesh"/>
+        <constructor-arg value="India"/>
+        <constructor-arg value="524201" />
+    </bean>
+
+    <!-- instead of adding each bean postPorcessor -->
+    <context:annotation-config/>
+</beans>

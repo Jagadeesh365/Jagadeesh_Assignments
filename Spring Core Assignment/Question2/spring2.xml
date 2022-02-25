@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="Question" class="Question2.Question">
+		<property name="questionId" value="111" />
+		<property name="question" value="what is Spring?" />
+		<property name="answers">
+			<list>
+
+				<value>Spring is a popular and widely used web framework of Java that providing extensive infrastructure support for modern webapplications development. </value>
+				<value>It enables the software developers to build applications from old Java objects..</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="Question1" class="Question2.Question">
+		<property name="questionId" value="112" />
+		<property name="question" value="what is Spring Boot?" />
+		<property name="answersSet">
+			<set>
+				<value>Spring Boot is an open-source micro framework maintained by a company called Pivotal. </value>
+				<value>It provides Java developers with a platform to get started with an auto configurable production-grade Spring application</value>
+				
+			</set>
+		</property>
+	</bean>
+	<!-- using set collection injection -->
+	<bean id="Question2" class="Question2.Question">
+		<property name="questionId" value="113" />
+		<property name="question" value="what is Spring MVC" />
+		<property name="answersMap">
+			<map>
+				<entry key="1" value="Spring MVC is a library within the Spring framework that simplifies handling HTTP requests and responses. ...  " />
+				<entry key="2"
+					value="The MVC stands for Model-View-Controller, which is its core function, allowing separation of the business logic," />
+				<entry key="3"
+					value="presentation logic, and navigation logic" />
+			</map>
+		</property>
+	</bean>
+
+</beans>
