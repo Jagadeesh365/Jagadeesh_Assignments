@@ -1,0 +1,14 @@
+div{
+    height: 50%;
+    width: 50%;
+    background-color:rgb(153, 209, 224); 
+}
+h1{
+    font-weight: bolder;
+}
+h2{
+    text-decoration: line-through;
+}
+h3{
+    text-decoration: underline;
+}
