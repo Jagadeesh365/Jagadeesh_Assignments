@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 18</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <body>
+
+        <nav>
+            <a href="#">Question 18</a>
+        </nav>
+        <div>
+            <form id="pizzaForm" name="pizzaForm">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" value="" placeholder="Enter your name"><br>
+    
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" value="" placeholder="Enter your email"><br><br>
+    
+                <label for="toppings"><b>Toppings:</b> </label><br>
+    
+                <label for="cheese">Extra Cheese:</label>
+                <input type="checkbox" id="cheese" name="topping[]" value="Extra Cheese">
+    
+                <label for="pepperoni">Pepperoni:</label>
+                <input type="checkbox" id="pepperoni" name="topping[]" value="Pepperoni">
+    
+                <label for="olives">Olives:</label>
+                <input type="checkbox" id="olives" name="topping[]" value="olives">
+    
+                <label for="pepper">Pepper:</label>
+                <input type="checkbox" id="pepper" name="topping[]" value="pepper">
+    
+                <label for="pepper">Baoon:</label>
+                <input type="checkbox" id="baoon" name="topping[]" value="baoon">
+    
+                <label for="Tomatoes">Baoon:</label>
+                <input type="checkbox" id="tomatoes" name="topping[]" value="tomatoes">
+    
+                <label for="pepper">Mushrooms:</label>
+                <input type="checkbox" id="mushrooms" name="topping[]" value="mushrooms"><br>
+    
+                <span><b>How do you want to get your pizza!</b></span>
+    
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="delivery" name="yesNo" value="yes">
+    
+                <label for="pickup">Pickup</label>
+                <input type="radio" id="pickup" name="yesNo" value="no">
+    
+                <br>
+                <label for="tip">Tip? </label>
+                <select id="tip">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select><br>
+                <hr>
+    
+                <label for="address">Address</label><br>
+                <textarea id="addr" name="address" value="">
+            </textarea><br>
+                <input type="button" value="Submit" onclick="enableButton2()">
+                <input type="reset" value="Reset">
+                <input type="button" id="button2" value="Show Summary" onclick="showDetails()" disabled>
+            </form>
+    
+            <div id="summary"></div>
+        </div>
+        
+        
+       
+    <script src="Q18.js"></script>
+</body>
+</html>
