@@ -1,0 +1,37 @@
+
+server:
+ port: 9797  
+ 
+spring:
+ application:
+  name: API-GATEWAY
+  
+ cloud:
+  gateway:
+   routes:
+   - id: Core-Hotel-Management-Service
+     uri:
+      lb://Core-Hotel-Management-Service
+     predicates:
+     - Path=/**
+     
+   - id: Employee-Management-Service
+     uri:
+      lb://Employee-Management-Service
+     predicates:
+     - Path=**
+ 
+   - id: Guest-Management-Service
+     uri:
+      lb://Guest-Management-Service
+     predicates:
+     - Path=**
+     
+   - id: Room-Management-Service
+     uri:
+      lb://Room-Management-Service
+     predicates:
+     - Path=**
+     
+    
+    

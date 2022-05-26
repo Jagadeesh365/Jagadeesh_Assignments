@@ -1,0 +1,80 @@
+{
+  "employees": [
+    {
+      "id": "D6BNdWnHI",
+      "name": "Brad Gibson",
+      "company": "YouTube",
+      "email": "brad@gmail.com",
+      "title": "Youtuber",
+      "mobile": "9876546787",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g8R5VmgqDqpRCwQfw2Y9V-DM-iXS59R9hQ&usqp=CAU",
+      "groupId": "3"
+    },
+    {
+      "id": "TVobxeKbI",
+      "name": "Glenda Kim",
+      "company": "Friend",
+      "email": "glenda@gmail.com",
+      "title": "freelancer",
+      "mobile": "8880009991",
+      "photo": "https://www.kindpng.com/picc/m/163-1636340_user-avatar-icon-avatar-transparent-user-icon-png.png",
+      "groupId": "2"
+    },
+    {
+      "id": "UyEDV5Yds",
+      "name": "Lokesh",
+      "company": "Service",
+      "email": "vladeen@gmail.com",
+      "title": "Electrician",
+      "mobile": "9876546787",
+      "photo": "https://png.pngtree.com/png-clipart/20190922/original/pngtree-business-male-user-avatar-vector-png-image_4774078.jpg",
+      "groupId": "4"
+    },
+    {
+      "name": "Pavan",
+      "photo": "https://www.clipartmax.com/png/middle/258-2582267_circled-user-male-skin-type-1-2-icon-male-user-icon.png",
+      "mobile": "991773814",
+      "email": "pavan667@gamil.com",
+      "company": "HCL",
+      "title": "A5",
+      "groupId": "4",
+      "id": "b_GxoL_"
+    },
+    {
+      "name": "Sunny",
+      "photo": "https://png.pngtree.com/png-clipart/20190520/original/pngtree-business-male-icon-vector-png-image_4187852.jpg",
+      "mobile": "85214697123",
+      "email": "sunny@gamil.com",
+      "company": "TCS",
+      "title": "hello",
+      "groupId": "3",
+      "id": "9b_9-lO"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}
